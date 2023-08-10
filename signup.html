@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stripe</title>
+    <!-- Icon -->
+    <link
+      rel="icon"
+      href="https://images.ctfassets.net/fzn2n1nzq965/2EOOpI2mMZgHYBlbO44zWV/5a6c5d37402652c80567ec942c733a43/favicon.png?w=180&h=180"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-md">
+      <div class="card">
+        <h4 class="card-text">Create Account</h4>
+        <form action="">
+          <div class="name">
+            <label class="form-label" for="name">Name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              value="Manoj Kumar"
+            />
+          </div>
+          <div class="email">
+            <label class="form-label" for="email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              value="manoj@richpanel.com"
+            />
+          </div>
+          <div class="password">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              value="adnanhussain"
+            />
+          </div>
+          <div class="check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="check"
+              id="check"
+            />
+            <label class="form-check-label" for="check">Remember me</label>
+          </div>
+          <input class="btn btn-primary" type="button" value="Sign Up" />
+        </form>
+        <p class="card-text">
+          Already have an account? <a href="index.html">Login</a>
+        </p>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
