@@ -1,0 +1,70 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1e4d90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  width: 40%;
+  padding: 50px 50px 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.card-text {
+  font-weight: 500;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.card-text a {
+  text-decoration: none;
+}
+
+.form-label {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-control {
+  border: 1.2px solid rgba(128, 128, 128, 0.4);
+  margin-bottom: 10px;
+}
+
+.form-check-input {
+  border: 2px solid #84888d;
+  font-size: 1.2rem;
+}
+
+.form-check-label {
+  font-size: smaller;
+  font-weight: 500;
+}
+
+.btn {
+  width: 100%;
+  height: 3rem;
+  background-color: #1f4d91;
+  border-color: #1b437e;
+  border-radius: 4px;
+  margin: 30px 0;
+}
