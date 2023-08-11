@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stripe</title>
+    <!-- Icon -->
+    <link
+      rel="icon"
+      href="https://images.ctfassets.net/fzn2n1nzq965/2EOOpI2mMZgHYBlbO44zWV/5a6c5d37402652c80567ec942c733a43/favicon.png?w=180&h=180"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="subscription.css" />
+  </head>
+  <body>
+    <div class="container-md">
+      <div class="card">
+        <div class="content">
+          <div class="r-1">
+            <div class="headings sub-type">
+              <span class="switch">
+                <input type="checkbox" id="switcher" checked />
+                <label for="switcher"></label>
+              </span>
+            </div>
+            <div class="list-items">
+              <div class="mobile plan">Mobile</div>
+              <div class="basic plan">Basic</div>
+              <div class="standard plan">Standard</div>
+              <div class="premium plan">Premium</div>
+            </div>
+          </div>
+          <hr />
+          <div class="r-2">
+            <div class="headings">Monthly price</div>
+            <div class="list-items">
+              <div id="mobile" class="mobile">₹100</div>
+              <div id="basic" class="basic">₹200</div>
+              <div id="standard" class="standard">₹500</div>
+              <div id="premium" class="premium">₹700</div>
+            </div>
+          </div>
+          <hr />
+          <div class="r-3">
+            <div class="headings">Video quality</div>
+            <div class="list-items">
+              <div class="mobile">Good</div>
+              <div class="basic">Good</div>
+              <div class="standard">Better</div>
+              <div class="premium">Best</div>
+            </div>
+          </div>
+          <hr />
+          <div class="r-4">
+            <div class="headings">Resolution</div>
+            <div class="list-items">
+              <div class="mobile">480p</div>
+              <div class="basic">480p</div>
+              <div class="standard">1080p</div>
+              <div class="premium">4K+HDR</div>
+            </div>
+          </div>
+          <hr />
+          <div class="r-5">
+            <div class="headings">Devices you can watch</div>
+            <div class="list-items">
+              <div class="devices mobile">Phone Tablet</div>
+              <div class="devices basic">Phone Tablet Computer TV</div>
+              <div class="devices standard">Phone Tablet Computer TV</div>
+              <div class="devices premium">Phone Tablet Computer TV</div>
+            </div>
+          </div>
+        </div>
+        <div class="next">
+          <a href="index.html">Next</a>
+        </div>
+      </div>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="subscription.js"></script>
+    </div>
+  </body>
+</html>

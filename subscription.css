@@ -1,0 +1,198 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+body {
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.container-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* margin: 0px; */
+}
+
+.card {
+  display: flex;
+  width: 70%;
+  border: none;
+}
+
+.sub-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.switch {
+  position: relative;
+  width: 13rem;
+  height: 5rem;
+  border-radius: 25px;
+}
+
+.switch input {
+  appearance: none;
+  width: 13rem;
+  height: 4rem;
+  border-radius: 25px;
+  background-color: #1f4c91;
+  outline: none;
+  /* cursor: pointer; */
+}
+
+.switch input::before,
+.switch input::after {
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-weight: bolder;
+}
+
+.switch input::before {
+  content: "Monthly";
+  left: 20px;
+}
+
+.switch input::after {
+  content: "Yearly";
+  right: 20px;
+}
+
+.switch input:checked {
+  background: #1f4c91;
+}
+
+.switch label {
+  z-index: 1;
+  position: absolute;
+  top: 0.5rem;
+  bottom: 1.5rem;
+  border-radius: 20px;
+}
+
+.switch input {
+  transition: 0.25s;
+}
+
+.switch input:checked::before {
+  color: #1f4c91;
+  transition: color 0.5s;
+}
+
+.switch input:checked::after {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.switch input:checked + label {
+  left: 10px;
+  right: 80px;
+  background: #fff;
+  transition: left 0.5s, right 0.4s 0.2s;
+}
+
+.switch input:not(:checked) {
+  background: #1f4c91;
+  transition: background 0.4s;
+}
+
+.switch input:not(:checked)::before {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.switch input:not(:checked)::after {
+  color: #1f4c91;
+  transition: color 0.5s 0.2s;
+}
+
+.switch input:not(:checked) + label {
+  left: 90px;
+  right: 10px;
+  background: #fff;
+  transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+}
+
+.r-1,
+.r-2,
+.r-3,
+.r-4,
+.r-5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-items {
+  width: 65%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.list-items div {
+  width: 5.5rem;
+}
+
+.r-5 .list-items {
+  align-items: start;
+}
+
+.plan {
+  display: inline-flex;
+  height: 1.8vw;
+  width: 1.8vw;
+  padding: 3rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f4c91;
+  color: #fff;
+}
+
+.devices {
+  line-height: 2.5rem;
+}
+
+.mobile,
+.basic,
+.standard,
+.premium {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.next {
+  background-color: #1f4c91;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 25% 0rem 25%;
+  cursor: pointer;
+}
+
+.next a {
+  text-decoration: none;
+  color: #fff;
+  padding: 3rem 50%;
+}

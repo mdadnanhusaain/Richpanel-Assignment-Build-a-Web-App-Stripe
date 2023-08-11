@@ -1,27 +1,25 @@
 <?php
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $conn = new mysqli('localhost','root','','test');
-    if(isset($_POST['login_btn']))
+    $conn = new mysqli('sql6.freesqldatabase.com','sql6639014','PsBK1p9eFz','sql6639014');
+    if($conn->connect_error)    
     {
-        $sql = "SELECT * FROM user_login_details WHERE email = '?'";
-        $result = mysqli_query($conn,$sql);
-        while($row = mysqli_fetch_assoc($result)) {
-            $result_pass = $row['password'];
-            if($password == $result_pass)
-                header('Location:index.html');
-            else    {
-                echo "<script>
-                alert(`Incorrect password for ${password}`);
-                </script>";
-            }
-        }
-        $conn->close();
+        die('Connection Failed : '.$conn->connect_error);
     }
     else    
     {
-        echo "<script>console.log('Failed to establish connection');</script>";
-        die('Connection Failed : '.$conn->connect_error);
+        $res = $conn->prepare("SELECT pass FROM user_login_details WHERE email=?");
+        $comm->bind_param("s",$email);
+        $comm->execute();
+        $comm->close();
+        if($res == $password)   {
+            header("Location: index.html");
+        }
+        else {
+            echo "<script>
+            alert('Wrong Password');
+            </script>";
+        }
+        $conn->close();
     }
-    header("Location: index.html");
 ?>
